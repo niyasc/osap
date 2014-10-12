@@ -1,0 +1,53 @@
+.header-bg
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:1200;
+	background-color:#9999ff;
+	height:50px;
+}
+.header
+{
+	font-size:25px;
+	font-weight: bold;
+}
+.promo
+{
+	font-size:18px;
+}
+.footer{
+    position: relative;
+    bottom:0;
+    height: 30px;
+    background-color: black;
+    color: white;
+    width: 1200px;
+    text-align: center;
+    margin: auto;
+}
+.primary {
+	text-align: center;
+}
+.secondary {
+	display: inline-block;
+	text-align: center;
+	border: 1px solid red;
+	margin: auto;
+}
+
+.sidebar1 {
+	background-color: gray;
+	float: left;
+	width: 125px;
+}
+.sidebar2 {
+	background-color: gray;
+	float: left;
+	width: 125px;
+}
+.body {
+	background-color: black;
+	float: left;
+	width: 950px;
+	margin: auto;
+}

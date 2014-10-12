@@ -1,0 +1,40 @@
+<?php
+
+    // configuration
+    require("../includes/config.php"); 
+
+    // if form was submitted
+    if ($_SERVER["REQUEST_METHOD"] == "POST")
+    {
+        // validate submission
+        if (empty($_POST["uname"]))
+        {
+            redirect("login.php?error=Provide+mahall+username");
+        }
+        else if (empty($_POST["passwd"]))
+        {
+            apologize("login.php?error=Provide+mahall+password");
+        }
+
+        // query database for user
+        $rows = query("SELECT * FROM mahall WHERE uname = '?' and passwd='?'", $_POST["uname"],$_POST["passwd"]);
+
+        // if we found user, check password
+        if (count($rows) == 1)
+        {
+                $_SESSION["uname"] = $_POST["uname"];
+                print("login done");
+                //redirect("/Mahall-Online/html");
+        }
+
+        // else apologize
+        else
+        	redirect("login.php?error=Invalid+mahall+username+or+password.");
+    }
+    else
+    {
+        // else render form
+        render("login_form.php", ["title" => "Log In"]);
+    }
+
+?>

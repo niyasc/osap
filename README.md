@@ -1,4 +1,4 @@
-osap
-====
+Mahall-Online
+=============
 
-Open Source Alternative Project - An attempt to create a web directory containing popular software and their open source counter part.
+An attempt to record all details of mahall online and for management of informations related to mahall

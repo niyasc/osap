@@ -1,0 +1,6 @@
+<?php
+    // configuration
+    print("hi");
+    require("../includes/config.php");
+    render("home.php");
+?>
