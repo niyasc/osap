@@ -15,7 +15,7 @@
 				echo "<tr>";
 				
 					echo "<td>";
-					echo "<a href='category.php?id=".$categories[$i]["id"]."'>";
+					echo "<a href='software.php?id=".$categories[$i]["id"]."'>";
 						echo "<div class='box'>";
 						echo $categories[$i]["name"];
 						echo "</div>";
@@ -23,7 +23,7 @@
 					echo "</td>";
 				
 					echo "<td>";
-					echo "<a href='category.php?id=".$categories[$i+1]["id"]."'>";
+					echo "<a href='software.php?id=".$categories[$i+1]["id"]."'>";
 						echo "<div class='box'>";
 						echo $categories[$i+1]["name"];
 						echo "</div>";
@@ -36,7 +36,7 @@
 			if ($count > 0) {
 				echo "<tr>";
 					echo "<td colspan=2>";
-						echo "<a href='category.php?id=".$categories[$i]["id"]."'>";
+						echo "<a href='software.php?id=".$categories[$i]["id"]."'>";
 						echo "<div class='box' style='width: 400px'>";
 						echo $categories[$i]["name"];
 						echo "</div>";
@@ -46,7 +46,7 @@
 			}
 			echo "</table>";
 		?>
-		<a href="add_category.php">Add category</a>
+		<a href="add_subcategory.php?id=<?=$id?>">Add Sub category</a>
 	</div>
 	<div class="sidebar2">
 		abc

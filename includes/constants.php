@@ -11,7 +11,7 @@
      **********************************************************************/
 
     // your database's name
-    define("DATABASE", "mdb");
+    define("DATABASE", "osap");
 
     // your database's password
     define("PASSWORD", "");

@@ -8,7 +8,7 @@
         <link href="css/bootstrap.css" rel="stylesheet"/>
         
 </header>
-<a href=../html>
+<a href=../>
 <table class="header-bg">
 	<tr>
 		<td class="header">

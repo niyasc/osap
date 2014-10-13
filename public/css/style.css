@@ -1,3 +1,8 @@
+table {
+	margin: auto;
+	border-spacing: 10px;
+	
+}
 .header-bg
 {
 	margin-left:auto;
@@ -46,8 +51,25 @@
 	width: 125px;
 }
 .body {
-	background-color: black;
+	background-color: none;
+	border: 1px solid black;
+	border-radius: 4px;
 	float: left;
 	width: 950px;
 	margin: auto;
+	padding: 20px;
+}
+.box {
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	border-spacing: 10px;
+	border-radius: 5px;
+	padding: 4px;
+	text-align: center;
+	font-weight: bold;
+	margin: 2px;
 }
