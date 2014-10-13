@@ -18,6 +18,7 @@
 							echo "<a href=detailed.php?id=".$s["id"]." style='font-size: 20px'>";
 							echo $s["name"]." (".$s['platform'].")";
 							echo "</a>";
+							echo "<br/>";
 						}
 					}
 				?>
@@ -30,6 +31,7 @@
 							echo "<a href=detailed.php?id=".$s["id"]." style='font-size: 20px'>";
 							echo $s["name"]." (".$s['platform'].")";
 							echo "</a>";
+							echo "<br/>";
 						}
 					}
 				?>
