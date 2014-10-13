@@ -20,5 +20,14 @@
 			Open Source Alternatives for Popular Proprietary Software
 		</td>
 	</tr>
+	<tr>
+		<td style="text-align: right">
+			<?php
+				if(!empty($_SESSION["uname"])){
+					echo "<a href='logout.php'>logout</a>";
+				}
+			?>
+		</td>
+	</tr>
 </table>
 </a>

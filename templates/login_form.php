@@ -23,22 +23,17 @@
 	?>
 	<tr>
 		<td>
-			<input class='form-control' type='text' required='' name='uname' placeholder="Mahall user name" autofocus='' autosuggest='false'/>
+			<input class='form-control' type='text' required='' name='uname' placeholder="Admin user name" autofocus='' autocomplete='off'/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<input class='form-control' type='password' required='' name='passwd' placeholder="Password"/>
+			<input class='form-control' type='password' required='' name='passwd' placeholder="Admin Password"/>
 		</td>
 	</tr>
 	<tr>
 		<td style='text-align:center'>
 			<input type='submit' value='Login' class='btn btn-default'>
-		</td>
-	</tr>
-		<tr>
-		<td style='text-align:center'>
-			<a href='register.php' class='btn btn-default'>Create Account</a>
 		</td>
 	</tr>
 </table>

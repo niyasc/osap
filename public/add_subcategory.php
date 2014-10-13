@@ -2,11 +2,14 @@
 
     // configuration
     require("../includes/config.php"); 
+    
+    if(empty($_SESSION["uname"])) {
+    	redirect("login.php");
+    }
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-    	print 'inif';
         // validate submission
         if (empty($_POST["name"]))
         {
@@ -29,12 +32,10 @@
     }
     else if(empty($_GET["id"])) {
     	//some mistake or direct access attempt
-    	echo 'mistake';
     	redirect("./");
     }
     else
     {
-    	print 'inelse';
         // else render form
         $cat = query("select name from category where id=?", $_GET["id"]);
         $cat = $cat[0]["name"];

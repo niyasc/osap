@@ -7,6 +7,9 @@
 		abc
 	</div>
 	<div class="body">
+	<div style="margin: auto; text-align: center">
+		<h3><?=$heading?></h3>
+	</div>
 		<?php
 			$count = count($categories);
 			$i = 0;

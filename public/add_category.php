@@ -2,6 +2,9 @@
 
     // configuration
     require("../includes/config.php"); 
+    if(empty($_SESSION["uname"])) {
+    	redirect("login.php");
+    }
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")

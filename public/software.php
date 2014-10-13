@@ -9,7 +9,7 @@
     }
     else {
     	try {
-    		$softwares = query("select * from free where subcat=?", $_GET["id"]);
+    		$softwares = query("select id, name, platform, type from software where subcat=? order by name asc", $_GET["id"]);
     		$subcat = query("select parent from subcat where id = ?", $_GET["id"]);
     		$subcat = $subcat[0]["parent"];
     		
@@ -19,7 +19,7 @@
     		$catname = query("select name from category where id = ?", $subcat);
     		$catname = $catname[0]["name"];
     		
-    		render("software.php", ["softwares" => $softwares, "title" => "Softwares in ".$catname." ".$scatname, "id" => $_GET["id"]]);
+    		render("software.php", ["softwares" => $softwares, "title" => "Softwares in ".$catname." ".$scatname, "id" => $_GET["id"], "heading" => "<a href=category.php?id=".$subcat.">".$catname."</a> => ".$scatname]);
     	}
     	catch (Exception $e) {
     		echo $e->getMessage();

@@ -2,33 +2,46 @@
 
     // configuration
     require("../includes/config.php"); 
+    if(empty($_SESSION["uname"])) {
+    	redirect("login.php");
+    }
 
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // validate submission
-        if (empty($_POST["name"]))
-        {
-            redirect("add_subcategory.php?error=Provide+a+category");
+    	print "if";
+    	try {
+        	$scat = $_POST["subcategory"];
+        	$scatid = query("select id from subcat where name=?", $scat);
+        	$scatid = $scatid[0]["id"];
+        
+        	$name = $_POST["name"];
+        	$desc = $_POST["description"];
+        	$website = $_POST["website"];
+        	$platform = $_POST["platform"];
+        	$submit = $_POST["submit"];
+        	if ($_POST["type"] == 0) {
+        		$type = 0;
+        	}
+        	else {
+        		$type = 1;
+        	}
+        	print 'hi';
+        	$f = query("insert into software(subcat, name, website, platform, submit, type, description) values(?, ?, ?, ?, ?, ?, ?)", $scatid, $name, $website, $platform, $submit, $type, $desc);
+        	print 'again';
+        	print_r($f);
+        	print $f;
+        	print "error";
+        	redirect("./software.php?id=".$scatid);
         }
-        else
-        {
-        	print_r($_POST);
-        	$catid = query("select id from category where name=?", $_POST["parent"]);
-        	$catid = $catid[0]["id"];
-        	
-        	query("INSERT INTO subcat(name, parent) values(?, ?)", $_POST["name"], $catid);
-        	?>
-        		<script>
-        		alert("Category added successfully");
-        		</script>
-        	<?php
-        	redirect("software.php?id=".$catid);
+        catch(Exception $e) {
+        	print_r($e);
         }
     }
-    else if(empty($_GET["id"])) {
+  else if(empty($_GET["id"])) {
     	//some mistake or direct access attempt
-    	redirect("./");
+    	print 'mistake';
+    	//redirect("./");
     }
     else
     {

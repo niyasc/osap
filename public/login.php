@@ -1,8 +1,7 @@
 <?php
 
     // configuration
-    require("../includes/config.php"); 
-
+    require("../includes/config.php");
     // if form was submitted
     if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
@@ -16,18 +15,12 @@
             apologize("login.php?error=Provide+mahall+password");
         }
 
-        // query database for user
-        $rows = query("SELECT * FROM mahall WHERE uname = '?' and passwd='?'", $_POST["uname"],$_POST["passwd"]);
-
-        // if we found user, check password
-        if (count($rows) == 1)
-        {
-                $_SESSION["uname"] = $_POST["uname"];
-                print("login done");
-                //redirect("/Mahall-Online/html");
+        if($_POST["uname"] == "admin" and $_POST["passwd"]=="secret") {
+        	$_SESSION["uname"] = $_POST["uname"];
+        	print "login done";
+        	print_r($_SESSION);
+        	redirect("./");
         }
-
-        // else apologize
         else
         	redirect("login.php?error=Invalid+mahall+username+or+password.");
     }
