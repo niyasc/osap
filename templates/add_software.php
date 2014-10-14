@@ -42,7 +42,7 @@
 			Software Name
 		</td>
 		<td>
-			<input class='form-control' type='text' required='' name='name' autocomplete="off" autfocus="" placeholder="Software Name"/>
+			<input class='form-control' type='text' required='' name='name' autocomplete="off" autofocus="" placeholder="Software Name"/>
 		</td>
 	</tr>
 	<tr>
@@ -74,6 +74,7 @@
 				<option>Android</option>
 				<option>Windows Phone</option>
 				<option>iPhone</option>
+				<option>Online-Web based</option>
 			</select>
 		</td>
 	</tr>

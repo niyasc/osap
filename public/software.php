@@ -9,7 +9,7 @@
     }
     else {
     	try {
-    		$softwares = query("select id, name, platform, type from software where subcat=? order by name asc", $_GET["id"]);
+    		$softwares = query("select id, name, platform, type from software where subcat=? order by name, platform asc", $_GET["id"]);
     		$subcat = query("select parent from subcat where id = ?", $_GET["id"]);
     		$subcat = $subcat[0]["parent"];
     		

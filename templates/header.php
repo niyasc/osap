@@ -12,26 +12,26 @@
 <link rel="stylesheet" href="./css/jquery-ui.css">
         
 </header>
-<a href=../>
-<table class="header-bg">
-	<tr>
-		<td class="header">
+
+
+<div class="header-bg">
+	<a href="../" style="text-decoration: none; color: inherit">
+	<div class="header">
 			Open Source Alternative Project
-		</td>
-	</tr>
-		<tr>
-		<td class="promo">
+	</div>
+	<div class="promo">
 			Open Source Alternatives for Popular Proprietary Software
-		</td>
-	</tr>
-	<tr>
-		<td style="text-align: right">
+	</div>
+	</a>
+	<div style="text-align: center; font-weight: bold">
+			Beta Version
+	</div>
+	<div style="text-align: right">
 			<?php
 				if(!empty($_SESSION["uname"])){
 					echo "<a href='logout.php'>logout</a>";
 				}
 			?>
-		</td>
-	</tr>
-</table>
-</a>
+	</div>
+</div>
+

@@ -9,12 +9,22 @@ table {
 	margin-right:auto;
 	width:1200;
 	background-color:#9999ff;
-	height:50px;
+	height:100px;
 }
+
+.header-bg {
+	text-decoration: none;
+}
+
 .header
 {
 	font-size:25px;
 	font-weight: bold;
+	text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 .promo
 {
@@ -38,6 +48,7 @@ table {
 	text-align: center;
 	border: 1px solid red;
 	margin: auto;
+	width: 1200px;
 }
 
 .sidebar1 {
@@ -55,7 +66,7 @@ table {
 	border: 1px solid black;
 	border-radius: 4px;
 	float: left;
-	width: 950px;
+	width: 945px;
 	margin: auto;
 	padding: 20px;
 }

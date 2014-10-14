@@ -11,6 +11,7 @@
 			<h3><?=$heading?></h3>
 		</div>
 		<div class='table table-striped table-bordered'>
+		
 		<?php
 			foreach($software as $s) {
 				echo "<div style='font-size: 20px'>";
