@@ -23,7 +23,7 @@ $(document).ready(function() {
     $("input#search").autocomplete({
         source: source,
         select: function( event, ui ) { 
-            window.location.href = ui.item.value;
+            window.location.href = ui.item.link;
         }
     });
 });

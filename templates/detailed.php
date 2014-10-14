@@ -1,7 +1,4 @@
 <style>
-div {
-	border: 1px solid black;
-}
 </style>
 <div class="primary">
 <div class="secondary">

@@ -4,7 +4,7 @@
 	
 if (isset($_GET['searchterm'])){
 
-	$names = query("select id, name from software where type=1 and name like '%".$_GET["searchterm"]."%'");
+	$names = query("select id, name, platform from software where type=1 and name like '%".$_GET["searchterm"]."%'");
 	$data = [];
 	$single = [];
 	if(count($names) == 0) {
@@ -12,8 +12,9 @@ if (isset($_GET['searchterm'])){
 	}
 	else {
 		foreach($names as $name) {
-			$single['label'] = $name['name'];
-			$single['value'] = "alternative.php?id=".$name['id'];
+			$single['label'] = $name['name']."(".$name['platform'].")";
+			$single['value'] = $name['name']."(".$name['platform'].")";
+			$single['link'] = "alternative.php?id=".$name['id'];
 			array_push($data, $single);
 		}
 		echo json_encode($data);
