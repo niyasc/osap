@@ -7,6 +7,10 @@
         <link href="css/style.css" rel="stylesheet"/>
         <link href="css/bootstrap.css" rel="stylesheet"/>
         
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-ui.js"></script>
+<link rel="stylesheet" href="./css/jquery-ui.css">
+        
 </header>
 <a href=../>
 <table class="header-bg">

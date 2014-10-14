@@ -13,7 +13,6 @@
     		$details = $details[0];
     		
     		
-    		
     		$subcat = query("select parent from subcat where id = ?", $details["subcat"]);
     		$subcat = $subcat[0]["parent"];
     		

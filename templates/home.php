@@ -8,6 +8,7 @@
 	</div>
 	<div class="body">
 		<?php
+			include("search.php");
 			$count = count($categories);
 			$i = 0;
 			echo "<table>";

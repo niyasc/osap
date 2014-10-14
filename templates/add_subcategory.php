@@ -23,7 +23,7 @@
 	?>
 	<tr>
 		<td>
-			<input class='form-control' type='text' required='' name='parent' value=<?=$category?> readonly />
+			<input class='form-control' type='text' required='' name='parent' value="<?=$category?>" readonly />
 		</td>
 	</tr>
 	<tr>

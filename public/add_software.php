@@ -20,13 +20,12 @@
         	$website = $_POST["website"];
         	$platform = $_POST["platform"];
         	$submit = $_POST["submit"];
-        	if ($_POST["type"] == 0) {
+        	if ($_POST["type"] == "Free") {
         		$type = 0;
         	}
         	else {
         		$type = 1;
         	}
-        	print 'hi';
         	$f = query("insert into software(subcat, name, website, platform, submit, type, description) values(?, ?, ?, ?, ?, ?, ?)", $scatid, $name, $website, $platform, $submit, $type, $desc);
         	print 'again';
         	print_r($f);
