@@ -33,7 +33,7 @@ a:hover, a:visited, a:link, a:active
 .footer{
     position: relative;
     bottom:0;
-    height: 30px;
+    height: 50px;
     background-color: black;
     color: white;
     width: 1200px;

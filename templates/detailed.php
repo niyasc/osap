@@ -68,6 +68,18 @@
 			</span>
 			</td>
 		</tr>
+		<tr>
+			<td>
+			<span style="font-weight: bold">
+				Suggested By
+			</span>
+			</td>
+			<td>
+			<span style="font-weight: bold">
+				<?=$details['submit']?>
+			</span>
+			</td>
+		</tr>
 	</table>
 						
 	</div>

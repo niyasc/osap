@@ -3,6 +3,13 @@
 
 <table class='table-striped' style='width:400px'>
 	<tr>
+		<td style="text-align: justify;">
+			<div style="font-size: 20px; background-color: 5BC0DE; padding: 4px; border-radius: 4px; color: white; text-align: justify">
+			In order to maintain consistency, we don't permit user additions at the moment. Still You may suggest a software <a href="suggest.php">here</a>. After review process, proper suggestions will be added to database with your name.
+			</div>
+		</td>
+	</tr>
+	<tr>
 		<td style="text-align:center">
 			<h4>Login</h4>
 		</td>
