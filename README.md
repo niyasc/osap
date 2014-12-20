@@ -1,4 +1,4 @@
-Mahall-Online
+Open Source Alternative Project
 =============
 
-An attempt to record all details of mahall online and for management of informations related to mahall
+A web directory project project, which will provide open source alternative for popular proprietary software.
