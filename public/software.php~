@@ -38,6 +38,7 @@
     			array_push($final, $software);
     		}
     		
+    		print_r($final);
     		
     		render("software.php", ["softwares" => $final, "title" => "Softwares in ".$catname." ".$scatname, "id" => $_GET["id"], "heading" => "<a href=category.php?id=".$subcat.">".$catname."</a> => ".$scatname]);
     	}

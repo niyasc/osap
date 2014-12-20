@@ -10,7 +10,7 @@
 	</div>
 	<div class="body">
 	<?php
-		include("search.php");
+		include("search.php"):
 	?>
 	<div style="margin: auto; text-align: center">
 		<h3><?=$heading?></h3>

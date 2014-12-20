@@ -1,8 +1,30 @@
-<table>
-	<tr>
-		<td>
-		</td>
-		<td>
-		</td>
-	</tr>
-</table>
+<style>
+	.sidebar1, .sidebar2 {
+		float: left;
+		width: 125px;
+	}
+	.content {
+		float: left;
+		width: 100%;
+	}
+	
+	.body {
+		text-align: center;
+		display: inline;
+	}
+		
+</style>
+<div class="body">
+	<div class="sidebar1">
+		<?php
+			include("sidebar1.php");
+		?>
+	</div>
+	<div class="content" style="text-align: center; border: 1px solid black; height: 100%">
+	</div>
+	<div class="sidebar2">
+		<?php
+			include("sidebar2.php");
+		?>
+	</div>
+</div>

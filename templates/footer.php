@@ -3,14 +3,8 @@
 		<a href="suggest.php">Suggest a software/Other suggestions</a>
 	</div>
 	<div style="dispay: inline">
-			<div style="float: left">
+			<div style="text-align: center">
 				Copyleft @ TechnoRevolutionary
 			</div>
-			<div style="float: right">
-			A project in Collaboration with <a href="http://technorevolution.in" target="_blank" style="font-weight: bold">TechnoRevolution</a>
-			</div>
-	</div>
-	<div>
-			Source code available at <a href="https://github.com/niyasc/osap" target="_blank">github</a>
 	</div>
 </div>

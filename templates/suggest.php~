@@ -4,9 +4,7 @@
 <div class="primary">
 <div class="secondary">
 	<div class="sidebar1">
-		<?php
-			include("sidebar1.php");
-		?>
+		abc
 	</div>
 	<div class="body">
 		<div style="width: 500px; margin: auto;">
@@ -33,9 +31,7 @@
 		</div>
 	</div>
 	<div class="sidebar2">
-		<?php
-			include("sidebar2.php");
-		?>
+		abc
 	</div>
 </div>
 </div>

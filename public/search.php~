@@ -37,4 +37,12 @@ Search for a propritary Software to get Alternative(Javascript should be enabled
 <div class="ui-widget">
 <input id="search" class='form-control'>
 </div>
+<div>
+	<h4>OR</h4>
+</div>
+<div>
+	<h4>
+		Browse Categories
+	</h4>
+</div>
 

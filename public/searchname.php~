@@ -16,7 +16,7 @@ if (isset($_GET['searchterm'])){
 			$str = "";
 			foreach($platforms as $platform)
 			{
-				$str = $str." ".$platform['name'];
+				$str = $str."ada";
 			}
 			$single['label'] = $name['name']."(".$str.")";
 			$single['value'] = $name['name']."(".$str.")";

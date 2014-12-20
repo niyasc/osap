@@ -1,3 +1,6 @@
+body {
+	width: 100%;
+}
 table {
 	margin: auto;
 	border-spacing: 10px;
@@ -7,9 +10,7 @@ table {
 {
 	margin-left:auto;
 	margin-right:auto;
-	width:1200;
 	background-color:#9999ff;
-	height:100px;
 }
 
 .header-bg {
@@ -21,6 +22,7 @@ table {
 	font-size:25px;
 	font-weight: bold;
 	text-decoration: none;
+	padding-left: 20px;
 }
 a:hover, a:visited, a:link, a:active
 {
@@ -29,46 +31,44 @@ a:hover, a:visited, a:link, a:active
 .promo
 {
 	font-size:18px;
+	padding-left: 20px;
 }
 .footer{
-    position: relative;
+    position: fixed;
     bottom:0;
-    height: 50px;
+    width: 100%;
     background-color: black;
     color: white;
-    width: 1200px;
     text-align: center;
-    margin: auto;
+    margin-top: 100px;
 }
 .primary {
 	text-align: center;
+	width: 100%;
 }
 .secondary {
-	display: inline-block;
-	text-align: center;
-	border: 1px solid red;
+	display: inline-align: center;
 	margin: auto;
-	width: 1200px;
+	width: 100%;
 }
 
 .sidebar1 {
 	background-color: gray;
-	float: left;
 	width: 125px;
+	float: left;
 }
 .sidebar2 {
 	background-color: gray;
-	float: left;
 	width: 125px;
+	float: right;
 }
 .body {
 	background-color: none;
-	border: 1px solid black;
 	border-radius: 4px;
-	float: left;
-	width: 945px;
 	margin: auto;
 	padding: 20px;
+	display: inline-block;
+	width: 100% - 20%;
 }
 .box {
 	background-color: black;

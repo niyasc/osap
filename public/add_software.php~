@@ -49,7 +49,7 @@
         	
         	print $f;
         	print "error";
-        	redirect("./software.php?id=".$scatid);
+        	//redirect("./software.php?id=".$scatid);
         }
         catch(Exception $e) {
         	print_r($e);

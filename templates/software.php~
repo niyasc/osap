@@ -28,7 +28,7 @@
 								$str = $str.$platform["name"]."  ";
 							}
 							echo "<a href=detailed.php?id=".$s["id"]." style='font-size: 20px'>";
-							echo "<li>".$s["name"]."(".$str.")"."</li>";
+							echo "<li>".$s["name"]."sdfds (".$str.")"."</li>";
 							echo "</a>";
 							echo "<br/>";
 						}
@@ -44,13 +44,8 @@
 				<?php
 					foreach($softwares as $s) {
 						if($s["type"] == 0) {
-							$str = "";
-							foreach($s["platforms"] as $platform)
-							{
-								$str = $str.$platform["name"]."  ";
-							}
 							echo "<a href=detailed.php?id=".$s["id"]." style='font-size: 20px'>";
-							echo "<li>".$s["name"]." (".$str.")"."</li>";
+							echo "<li>".$s["name"]." (".$s['platform'].")"."</li>";
 							echo "</a>";
 							echo "<br/>";
 						}

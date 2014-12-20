@@ -11,9 +11,18 @@
     	$subcat = query("select subcat from software where id = ?", $id);
     	$subcat = $subcat[0]['subcat'];
     	
-    	$software = query("select id, name, platform from software where type = 0 and subcat= ? order by name, platform", $subcat);
+    	$softwares = query("select id, name, platform from software where type = 0 and subcat= ? order by name, platform", $subcat);
     	
-    	render("alternative.php", ["title" => "Alternatives for ".$source, "heading"=> "Alternatives for <a href=detailed.php?id=".$id." target='_blank'>".$source."</a>", "software" => $software]);
+    	$final = [];
+    		
+    	foreach($softwares as $software)
+    	{
+    		$platform = query("select c.name from software a, software_platform b,platform c where a.id = b.software_id and b.platform_id = c.id and a.id = ?", $software["id"]);
+  		$software["platforms"] = $platform;
+    		array_push($final, $software);
+    	}
+    	
+    	render("alternative.php", ["title" => "Alternatives for ".$source, "heading"=> "Alternatives for <a href=detailed.php?id=".$id." target='_blank'>".$source."</a>", "software" => $final]);
     	
     }
     else {

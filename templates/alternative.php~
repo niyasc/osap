@@ -19,7 +19,7 @@
 		<?php
 			foreach($software as $s) {
 				$str = "";
-				foreach($s["platforms"] as $platform)
+				foreach($platforms as $platform)
 				{
 					$str = $str.$platform["name"]."  ";
 				}

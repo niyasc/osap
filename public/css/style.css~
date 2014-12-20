@@ -1,38 +1,87 @@
+body {
+	width: 100%;
+}
+table {
+	margin: auto;
+	border-spacing: 10px;
+	
+}
 .header-bg
 {
 	margin-left:auto;
 	margin-right:auto;
-	width:1200px;
 	background-color:#9999ff;
-	height:50px;
 }
+
+.header-bg {
+	text-decoration: none;
+}
+
 .header
 {
 	font-size:25px;
+	font-weight: bold;
+	text-decoration: none;
+	padding-left: 20px;
+}
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 .promo
 {
 	font-size:18px;
+	padding-left: 20px;
 }
-.footer
-{
-	margin-left:auto;
-	margin-right:auto;
-	background-color:black;
-	color:white;
-	width:1200px;
-	text-align:center;
-	height:25px;
+.footer{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
 }
-content
-{
-	height:80%;
-	width:1200px;
-	margin-left:auto;
-	margin-right:auto;
+.primary {
+	text-align: center;
+	width: 100%;
 }
-table
-{
-	margin-left:auto;
-	margin-right:auto;
+.secondary {
+	display: inline-align: center;
+	border: 1px solid red;
+	margin: auto;
+	width: 100%;
+}
+
+.sidebar1 {
+	background-color: gray;
+	width: 125px;
+	float: left;
+}
+.sidebar2 {
+	background-color: gray;
+	width: 125px;
+	float: right;
+}
+.body {
+	background-color: none;
+	border-radius: 4px;
+	margin: auto;
+	padding: 20px;
+	display: inline-block;
+	width: 100% - 20%;
+}
+.box {
+	background-color: black;
+	color: white;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	vertical-align: middle;
+	border-spacing: 10px;
+	border-radius: 5px;
+	padding: 4px;
+	text-align: center;
+	font-weight: bold;
+	margin: 2px;
 }

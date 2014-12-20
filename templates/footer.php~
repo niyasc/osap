@@ -1,12 +1,16 @@
-<table>
-	<tr>
-		<td>
-			Copyleft@Niyas C
-		</td>
-	</tr>
-	<tr>
-		<td>
-			Source code available at <a href="http://github.com/Mahall-Online">github</a>
-		</td>
-	</tr>
-</table>
+<div class='footer'>
+	<div style="text-align: center">
+		<a href="suggest.php">Suggest a software/Other suggestions</a>
+	</div>
+	<div style="dispay: inline">
+			<div style="float: left">
+				Copyleft @ TechnoRevolutionary
+			</div>
+			<div style="float: right">
+			A project in Collaboration with <a href="http://technorevolution.in" target="_blank" style="font-weight: bold">TechnoRevolution</a>
+			</div>
+	</div>
+	<div>
+			Source code available at <a href="https://github.com/niyasc/osap" target="_blank">github</a>
+	</div>
+</div>
