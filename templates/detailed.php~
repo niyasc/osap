@@ -71,9 +71,9 @@
 			<span style="font-weight: bold">
 				<ul>
 				<?php
-					foreach($details["platform"] as $platform)
+					foreach($platform as $p)
 					{
-						echo "<li>".$platform['name']."</li>";
+						echo "<li>".$p['name']."</li>";
 					}
 				?>
 				</ul>

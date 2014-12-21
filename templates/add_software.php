@@ -1,7 +1,7 @@
 <div class='content'>
 <form action='add_software.php?id=<?=$id?>' method='post'>
 
-<table class='table-striped' style='width:400px'>
+<table class='table-striped' style='width:400px; margin-bottom: 50px;'>
 	<tr>
 		<td colspan=2 style="text-align:center">
 			<h4>Add Software</h4>

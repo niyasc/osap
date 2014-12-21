@@ -10,7 +10,7 @@ table {
 {
 	margin-left:auto;
 	margin-right:auto;
-	background-color:#9999ff;
+	background-color:#1975FF;
 }
 
 .header-bg {
@@ -23,6 +23,7 @@ table {
 	font-weight: bold;
 	text-decoration: none;
 	padding-left: 20px;
+	color: white;
 }
 a:hover, a:visited, a:link, a:active
 {
@@ -32,6 +33,7 @@ a:hover, a:visited, a:link, a:active
 {
 	font-size:18px;
 	padding-left: 20px;
+	color: #ddd;
 }
 .footer{
     position: fixed;
@@ -74,13 +76,11 @@ a:hover, a:visited, a:link, a:active
 	background-color: black;
 	color: white;
 	width: 200px;
-	height: 50px;
-	line-height: 50px;
-	vertical-align: middle;
-	border-spacing: 10px;
+	vertical-align: center;
 	border-radius: 5px;
 	padding: 4px;
 	text-align: center;
 	font-weight: bold;
 	margin: 2px;
+	min-height: 50px;
 }

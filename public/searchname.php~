@@ -16,8 +16,9 @@ if (isset($_GET['searchterm'])){
 			$str = "";
 			foreach($platforms as $platform)
 			{
-				$str = $str."ada";
+				$str = $str.", ".$platform['name'];
 			}
+			$str = substr($str, 0, -2);
 			$single['label'] = $name['name']."(".$str.")";
 			$single['value'] = $name['name']."(".$str.")";
 			$single['link'] = "alternative.php?id=".$name['id'];

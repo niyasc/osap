@@ -50,8 +50,7 @@
 			Description
 		</td>
 		<td>
-			<textarea name="description">
-			</textarea>
+			<textarea name="description"></textarea>
 		</td>
 	</tr>
 	<tr>

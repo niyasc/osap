@@ -19,12 +19,13 @@
 		<?php
 			foreach($software as $s) {
 				$str = "";
-				foreach($platforms as $platform)
+				foreach($s["platforms"] as $platform)
 				{
-					$str = $str.$platform["name"]."  ";
+					$str = $str.$platform["name"].", ";
 				}
+				$str = substr($str,0, -2);
 				echo "<li><div style='font-size: 20px'>";
-					echo "<a href=detailed.php?id=".$s['id']." target='_blank' >".$s['name']."(".$str.")"."</a>";
+					echo "<a href=detailed.php?id=".$s['id']." >".$s['name']."(".$str.")"."</a>";
 				echo "</div></li>";
 			
 			}

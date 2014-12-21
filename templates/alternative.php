@@ -13,7 +13,7 @@
 		<div>
 			<h3><?=$heading?></h3>
 		</div>
-		<div class='table table-striped table-bordered'>
+		<div class='table table-striped table-bordered' style="text-align: left">
 		<ul>
 		
 		<?php
@@ -21,10 +21,11 @@
 				$str = "";
 				foreach($s["platforms"] as $platform)
 				{
-					$str = $str.$platform["name"]."  ";
+					$str = $str.$platform["name"].", ";
 				}
+				$str = substr($str,0, -2);
 				echo "<li><div style='font-size: 20px'>";
-					echo "<a href=detailed.php?id=".$s['id']." target='_blank' >".$s['name']."(".$str.")"."</a>";
+					echo "<a href=detailed.php?id=".$s['id']." >".$s['name']."(".$str.")"."</a>";
 				echo "</div></li>";
 			
 			}

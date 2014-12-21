@@ -16,7 +16,7 @@
 			<?=$heading?>
 		</h3>
 	</div>
-	<table class='table table-striped table-bordered' style="width: 720px">
+	<table class='table table-striped table-bordered' style="width: 720px; margin-bottom: 50px;">
 		<tr>
 			<td>
 				<span style="font-weight: bold">

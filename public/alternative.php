@@ -22,7 +22,7 @@
     		array_push($final, $software);
     	}
     	
-    	render("alternative.php", ["title" => "Alternatives for ".$source, "heading"=> "Alternatives for <a href=detailed.php?id=".$id." target='_blank'>".$source."</a>", "software" => $final]);
+    	render("alternative.php", ["title" => "Alternatives for ".$source, "heading"=> "Open Source Alternatives for <a href=detailed.php?id=".$id." >".$source."</a>", "software" => $final]);
     	
     }
     else {
